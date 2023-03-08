@@ -42,13 +42,6 @@ except URLError as e:
 
 #streamlit.text(fruityvice_response.json())
 
-# Normalizes the data in the json file 
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-
-# Converts the json file to a dataframe
-streamlit.dataframe(fruityvice_normalized)
-
-
 # troubleshooting
 streamlit.stop()
 
